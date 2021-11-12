@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Arbutus+Slab');
 @import url('https://fonts.googleapis.com/css?family=Athiti:400,500,600');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400&display=swap');
+
 
 /*------------------------------------------------------------------
     IMPORT FILES
@@ -23,12 +26,13 @@ body {
     font-size: 15px;
     font-family: 'Athiti', sans-serif;
     line-height: 1.80857;
+    font-weight: 10px;
 }
 
 
 a {
     color: #1f1f1f;
-    text-decoration: none !important;
+    text-decoration: none;
     outline: none !important;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -48,7 +52,7 @@ h6 {
     position: relative;
     padding: 0 0 10px 0;
     font-weight: normal;
-    line-height: 120% !important;
+    line-height: 120%;
     color: #1f1f1f;
     margin: 0
 }
@@ -128,7 +132,10 @@ a,
     color: #767676;
     margin: 0;
     padding: 0;
+
+
 }
+
 
 blockquote {
     margin: 20px 0 20px;
@@ -173,10 +180,12 @@ button:focus{
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-link{
-	/*color: #47923a ;
-	font-size: 18px;*/
+	color: black;
+	font-size: 16px;
+	font-weight: 600px;
 	padding: 0px 20px;
 	border-radius: 4px;
+	 font-family: "Athiti", sans-serif;
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
@@ -205,6 +214,20 @@ button:focus{
 /*------------------------------------------------------------------
     Slider
 -------------------------------------------------------------------*/
+.vid-bg {
+	/*position: absolute;*/
+	right:50;
+	bottom:70;
+	min-width: 100%;
+	min-height: 100%;
+}  
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .vid-bg {
+    width: 100%;
+  }
+}
 
 .cover-slides{
 	height: 100vh;
@@ -260,6 +283,7 @@ button:focus{
 	border: 2px solid transparent;
 	padding: 12px 30px;
 	font-size: 16px;
+	box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
 	line-height: 1.5;
 	border-radius: .1875rem;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -268,6 +292,7 @@ button:focus{
     color: #fff;
     background-color: #746d74;
     background-image: none;
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
    /* border-color: #150003;*/
 }
 .btn-outline-new-white:hover {
@@ -345,7 +370,7 @@ button:focus{
 
 
 .qt-background{
-	background: url(../images/qt-bg.jpg) no-repeat;
+	background: url(../images/Inchrist.jpg) no-repeat;
 	background-size: cover;
 	padding: 100px 0;
 	background-attachment: fixed;
@@ -354,10 +379,10 @@ button:focus{
 }
 .qt-background p {
     font-size: 35px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 44px;
     color: white;
-	font-family: 'Arbutus Slab', serif;
+	font-family: 'Athiti', serif;
 	margin-bottom: 20px;
 }
 
@@ -381,7 +406,8 @@ button:focus{
 .heading-title h2{
 	color: #010101;
 	font-size: 28px;
-	font-family: 'Arbutus Slab', serif;
+	font-family: 'Athiti', serif;
+	font-weight: 500;
 }
 .heading-title p{
 	font-size: 18px;
@@ -424,6 +450,9 @@ button:focus{
     overflow: hidden;
     -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
+    padding: 8 8 8;
+    /*width : 200px; 
+    height: 100px;*/
 }
 
 .why-text {
@@ -474,7 +503,8 @@ button:focus{
 	margin-top: 30px;
 }
 .tz-gallery .lightbox img {
-    width: 100%;
+    width: 90%;
+    height: 90%;
     margin-bottom: 30px;
     transition: 0.2s ease-in-out;
     box-shadow: 0 2px 3px rgba(0,0,0,0.2);
@@ -482,8 +512,16 @@ button:focus{
 .tz-gallery .lightbox img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+     /* transform: scale(1.0) rotate(12deg);*/
 }
-
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+}
 /*------------------------------------------------------------------
     Customer Reviews
 -------------------------------------------------------------------*/
@@ -744,7 +782,7 @@ button:focus{
 
 .page-breadcrumb {
     padding: 250px 0 150px;
-    background: url(../images/all-bg.jpg) no-repeat;
+    background: url(../images/leaders.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 0 0;
@@ -1317,7 +1355,7 @@ blockquote {
     height: 32px;
     text-align: center;
     line-height: 30px;
-    background: #d0a772;
+    background: #746d74;
     color: #ffffff;
     cursor: pointer;
     border: 0;
